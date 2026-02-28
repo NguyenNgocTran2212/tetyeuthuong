@@ -1,0 +1,176 @@
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background-color:#fff5f5;
+    font-size: 22px;
+}
+
+header{
+    background:linear-gradient(90deg,#a77575,#7a1a47);
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+nav{
+    background-color:#733185;
+    padding:10px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+.section{
+    padding:40px;
+}
+
+h2{
+    color:#9e4d4d;
+}
+
+.card{
+    background: white;
+    padding: 35px;
+    margin: 30px auto;
+    max-width: 1000px;
+    border-left: 6px solid #0a8f08;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+img{
+    max-width:100%;
+    border-radius:10px;
+}
+
+footer{
+    background:#af5252;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
+/* Nút đang ở trang hiện tại */
+nav a.active{
+    background-color: #481e5c;  /* xanh lá */
+    padding: 8px 15px;
+    border-radius: 20px;
+    color: white;
+}
+
+/* Hiệu ứng hover đẹp hơn */
+nav a:hover{
+    background-color: #ffcc00;
+    color: #a00000;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+/* Banner */
+.banner{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Card có hình */
+.card img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Card hover */
+.card{
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.03);
+}
+
+/* Link bao toàn bộ card */
+.card-link{
+    text-decoration: none;
+    color: black;
+}
+/* Banner đầu trang */
+.page-banner{
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+/* Bố cục 2 cột */
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+}
+
+/* Cột nội dung */
+.flex-text{
+   font-size: 20px;
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Cột hình ảnh */
+.flex-img{
+    flex: 1;
+    min-width: 300px;
+    
+}
+
+.flex-img img{
+    width: 60%;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+/* Card đẹp hơn */
+.card{
+    background: white;
+    padding: 20px;
+    border-left: 6px solid #0a8f08;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+/* ===== GALLERY ===== */
+.gallery-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.gallery-container img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.gallery-container img:hover{
+    transform: scale(1.05);
+}
